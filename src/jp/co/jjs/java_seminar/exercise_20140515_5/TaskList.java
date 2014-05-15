@@ -12,7 +12,9 @@ public class TaskList {
 
     public void showAll() {
         for (Task task: taskList) {
-            System.out.printf("%s%s\n", task.label, task.isFinished ? "(DONE)": "");
+            System.out.printf("%s%s\n",
+                    task.label,
+                    task.isFinished ? "(DONE)": "");
         }
     }
 }
