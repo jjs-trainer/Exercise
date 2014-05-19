@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BookShelf {
 
-    private ArrayList<Book> bookList = new ArrayList<>();
+    ArrayList<Book> bookList = new ArrayList<>();
 
     public void add(Book book) {
         bookList.add(book);
@@ -18,5 +18,9 @@ public class BookShelf {
         for (Book book: bookList) {
             System.out.println(book);
         }
+    }
+
+    public ArrayList<Book> getAll() {
+        return bookList;
     }
 }

@@ -11,5 +11,7 @@ public class Main {
         bookshelf.addAll(books);
         bookshelf.showAll();
 
+        BookWriter.write("Book2.csv", bookshelf.getAll());
+
     }
 }
